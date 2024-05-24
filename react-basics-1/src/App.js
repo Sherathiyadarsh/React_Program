@@ -11,10 +11,11 @@ import { useState } from 'react';
 import RegisterForm from './components/03day/RegisterForm';
 import Form1 from './components/03day/Form1';
 import Form2 from './components/03day/Form2';
+import ConditionalRendering from './components/04day/ConditionalRendering';
 
 function App() {
-  let a="Radhey Radhey"
-  let [isLoggedIn,setIsLoggedIn]=useState(false)
+  let a = "Radhey Radhey"
+  let [isLoggedIn, setIsLoggedIn] = useState(true)
   return (
     <div className='container'>
       {/* <label htmlFor=''>Enter</label> */}
@@ -36,7 +37,10 @@ function App() {
       <PropsDemo vara="Radhey Radhey"/> */}
       {/* <RegisterForm/> */}
       {/* <Form1/> */}
-       <Form2/>
+      {/* <Form2/> */}
+      <button type="button" class="btn btn-primary" onClick={()=>setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? "Logout" : "Login"}</button>
+
+      <ConditionalRendering isLoggedIn={isLoggedIn} username="Surbhi" />
     </div>
   );
 }
