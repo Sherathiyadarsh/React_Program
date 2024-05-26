@@ -15,6 +15,8 @@ import ConditionalRendering from './components/04day/ConditionalRendering';
 import Listrendering from './components/05day/Listrendering';
 import ProductRendering from './components/05day/ProductRendering';
 import Productlist from './components/05day/Productlist';
+import Formvalidition from './components/06day/Formvalidition';
+import CssinReact from './components/06day/CssinReact';
 
 function App() {
   let a = "Radhey Radhey"
@@ -46,7 +48,9 @@ function App() {
       <ConditionalRendering isLoggedIn={isLoggedIn} username="Surbhi" /> */}
       {/* <Listrendering/> */}
       {/* <ProductRendering/> */}
-      <Productlist/>
+      {/* <Productlist/> */}
+      {/* <Formvalidition/> */}
+      <CssinReact/>
     </div>
   );
 }

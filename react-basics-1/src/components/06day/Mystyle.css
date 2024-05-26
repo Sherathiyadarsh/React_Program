@@ -1,0 +1,9 @@
+.success {
+    text-decoration: underline;
+    color: cadetblue;
+}
+div{
+    background-color:rgb(191, 196, 194);
+    color: rgb(33, 33, 32);
+    padding: 10px;
+}

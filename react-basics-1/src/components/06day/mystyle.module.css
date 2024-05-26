@@ -1,0 +1,5 @@
+.err{
+    color: red;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
