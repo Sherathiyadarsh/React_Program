@@ -16,7 +16,12 @@ import Listrendering from './components/05day/Listrendering';
 import ProductRendering from './components/05day/ProductRendering';
 import Productlist from './components/05day/Productlist';
 import Formvalidition from './components/06day/Formvalidition';
-import CssinReact from './components/06day/CssinReact';
+// import CssinReact from './components/06day/CssinReact';
+import ReactBootstrapdemo from './components/07day/ReactBootstrapdemo';
+import { Mybutton, TextBox } from './components/07day/Stylecomponents';
+import ReactHooksFormValidition from './components/07day/ReactHooksFormValidition';
+import Counter from './components/08day/Counter';
+
 
 function App() {
   let a = "Radhey Radhey"
@@ -50,7 +55,12 @@ function App() {
       {/* <ProductRendering/> */}
       {/* <Productlist/> */}
       {/* <Formvalidition/> */}
-      <CssinReact/>
+      {/* <CssinReact/> */}
+      {/* <ReactBootstrapdemo/> */}
+      {/* <Mybutton>Click Me</Mybutton><br/><br/>
+      <TextBox type='datetime-local'></TextBox> */}
+      {/* <ReactHooksFormValidition/> */}
+      <Counter/>
     </div>
   );
 }
