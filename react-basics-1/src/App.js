@@ -21,6 +21,10 @@ import ReactBootstrapdemo from './components/07day/ReactBootstrapdemo';
 import { Mybutton, TextBox } from './components/07day/Stylecomponents';
 import ReactHooksFormValidition from './components/07day/ReactHooksFormValidition';
 import Counter from './components/08day/Counter';
+import Classcompdemo from './components/10day/Classcompdemo';
+import Classcompdemo1 from './components/10day/Classcompdemo1';
+import PasswordGenerator from './components/09day/PasswordGenerator';
+import RefDemo from './components/09day/RefDemo';
 
 
 function App() {
@@ -60,7 +64,13 @@ function App() {
       {/* <Mybutton>Click Me</Mybutton><br/><br/>
       <TextBox type='datetime-local'></TextBox> */}
       {/* <ReactHooksFormValidition/> */}
-      <Counter/>
+      {/* <Counter/> */}
+      {/* <Classcompdemo username="Darsh Sherathiya" address="Ahmedabad">
+        <Counter></Counter>
+      </Classcompdemo><hr/>
+      <Classcompdemo1/> */}
+      <PasswordGenerator/><hr/>
+      <RefDemo/>
     </div>
   );
 }
