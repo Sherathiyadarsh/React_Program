@@ -25,6 +25,8 @@ import Classcompdemo from './components/10day/Classcompdemo';
 import Classcompdemo1 from './components/10day/Classcompdemo1';
 import PasswordGenerator from './components/09day/PasswordGenerator';
 import RefDemo from './components/09day/RefDemo';
+import Productform from './components/Assing-1/Productform';
+ 
 
 
 function App() {
@@ -69,8 +71,9 @@ function App() {
         <Counter></Counter>
       </Classcompdemo><hr/>
       <Classcompdemo1/> */}
-      <PasswordGenerator/><hr/>
-      <RefDemo/>
+      {/* <PasswordGenerator/><hr/>
+      <RefDemo/> */}
+      <Productform/>
     </div>
   );
 }

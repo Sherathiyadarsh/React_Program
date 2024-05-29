@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 .succ{
@@ -38,4 +38,14 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.heading {
+  text-align: center;
+  font-size: 60px;
+}
+.body{
+  background-color:darkgrey;
+  border-radius: 20px;
 }

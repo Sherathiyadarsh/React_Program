@@ -3,7 +3,7 @@ import Inlinecssdemo from './Inlinecssdemo'
 import CSSvariable from './CSSvariable'
 import './Mystyle.css'
 import Globalcssdemo from './Globalcssdemo'
-import modulecss from './mystyle.module.css'
+import modulecss from './mystylemodule.css'
 
 const CssinReact = () => {
     return (
