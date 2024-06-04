@@ -26,7 +26,9 @@ import Classcompdemo1 from './components/10day/Classcompdemo1';
 import PasswordGenerator from './components/09day/PasswordGenerator';
 import RefDemo from './components/09day/RefDemo';
 import Productform from './components/Assing-1/Productform';
- 
+import Lifecyclemethods from './components/11day/Lifecyclemethods';
+import PureCompClassDemo from './components/11day/PureCompClassDemo';
+
 
 
 function App() {
@@ -73,7 +75,9 @@ function App() {
       <Classcompdemo1/> */}
       {/* <PasswordGenerator/><hr/>
       <RefDemo/> */}
-      <Productform/>
+      {/* <Productform/> */}
+      {/* <button type="button" class="btn btn-primary me-4" onClick={() => setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? "Hide" : "Show"}</button>{isLoggedIn && <Lifecyclemethods username="Darsh" />} */}
+      <PureCompClassDemo />
     </div>
   );
 }

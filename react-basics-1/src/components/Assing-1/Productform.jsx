@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Container, Form } from 'react-bootstrap'
 import { useForm } from 'react-hook-form'
 
+
 const Productform = () => {
-    const { register, handleSubmit, formState: { errors } ,reset} = useForm()
+    const { register, handleSubmit, formState: { errors }, reset } = useForm()
     let hookFormSubmit = (data) => {
         // alert(JSON.stringify(data))
         alert("Your data successfully submited")
@@ -64,8 +65,8 @@ const Productform = () => {
                         {errors.uimg && <span className='text-danger'>{errors.uimg.message}</span>}
                     </Form.Group>
 
-                    <Button type='submit' variant='info'>Submit Form</Button>
-                </Form>
+                    <Button type='submit' variant='light'>Submit Form</Button>
+                </Form><br />
             </Container>
             <br />
         </>
