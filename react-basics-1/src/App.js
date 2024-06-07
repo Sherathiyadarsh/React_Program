@@ -76,8 +76,8 @@ function App() {
       {/* <PasswordGenerator/><hr/>
       <RefDemo/> */}
       {/* <Productform/> */}
-      {/* <button type="button" class="btn btn-primary me-4" onClick={() => setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? "Hide" : "Show"}</button>{isLoggedIn && <Lifecyclemethods username="Darsh" />} */}
-      <PureCompClassDemo />
+      <button type="button" class="btn btn-primary me-4" onClick={() => setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? "Hide" : "Show"}</button>{isLoggedIn && <Lifecyclemethods username="Darsh" />}
+      {/* <PureCompClassDemo /> */}
     </div>
   );
 }
