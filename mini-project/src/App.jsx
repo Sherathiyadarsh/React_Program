@@ -4,6 +4,7 @@ import Pagenotfound from './feature/Pagenotfound';
 import Userlogin from './feature/Userlogin';
 import { Outlet } from 'react-router-dom';
 import Header from './feature/Header';
+import ContaxtData from './feature/ContaxtData';
 
 function App() {
   return (
@@ -22,8 +23,10 @@ function App() {
       {/* <h1>Hello React</h1> */}
       {/* <Pagenotfound/> */}
       {/* <Userlogin /> */}
-      <Header />
-      <Outlet />
+      <ContaxtData>
+        <Header />
+        <Outlet />
+      </ContaxtData>
     </>
   )
 }
