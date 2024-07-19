@@ -4,13 +4,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { ShowOnLogin, ShowOnLogout } from './hiddenlinks';
 import { toast } from 'react-toastify';
 import { DataContaxt } from './ContaxtData';
+import { ShowOnLogin, ShowOnLogout } from './hiddenlinks';
+ 
+
+ 
 const Header = () => {
     let data = useContext(DataContaxt)
-    console.log(data);
-
+    // console.log(data);
     const navigate = useNavigate()
     let handlelogout = () => {
         sessionStorage.removeItem("mini-project")
@@ -18,12 +20,12 @@ const Header = () => {
         navigate('/')
     }
     let [username, setUsername] = useState("Guest")
-    useEffect(()=>{
-        if(sessionStorage.getItem("mini-project")!=null){
+    useEffect(() => {
+        if (sessionStorage.getItem("mini-project") != null) {
             let obj = JSON.parse(sessionStorage.getItem("mini-project"))
             setUsername(obj.name)
         }
-    },[sessionStorage.getItem("mini-project")])
+    }, [sessionStorage.getItem("mini-project")])
     return (
         <Navbar expand="lg" bg="dark" data-bs-theme="dark">
             <Container fluid>
@@ -50,8 +52,8 @@ const Header = () => {
                         }} >Products </Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link  as={Link} to="/cart"> <FaShoppingCart size={30} />
-                            <span class="badge rounded-pill text-bg-danger">0</span>
+                        <Nav.Link as={Link} to="/cart"> <FaShoppingCart size={30} />
+                            <span class="badge rounded-pill text-bg-danger">{data.cart.length}</span>
                         </Nav.Link>
                         <ShowOnLogout>
                             <Nav.Link as={NavLink} to='/login' style={({ isActive }) => {
